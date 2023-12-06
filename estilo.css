@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff url(bg.png);
+    margin: 15px;
+}
+#container{
+    background: #ede9cc url(bg-container.png) top center repeat-y;/*defiinindo uma cor para o container*/
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;/*defino a largura maxima do continer*/
+}
+#topo{
+    background: #dbcd87;
+    height: 15.4em;/*definindo uma altura para o topo */
+    min-height: 250px;/*definindo uma altura minima */
+    position: relative;
+}
+#area-logo{
+    background: url(topo-imagem-principal2.png) no-repeat;
+    width: 100%;
+    height: 250px;
+    position: absolute;/*usada para determinar que o elemento sai do fluxo normal sem afetar a posição dos outros*/
+    top: 0;/*quer dizer que a area da logo ira ficar colada no topo*/
+    left: 0;/*ira ficar colada no canto direito*/
+    z-index: 1;/*qualquer parte que houver z index maior que 1 podera sobrepor a area logo*/
+}
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;/*para fazer sumir o texto da tela*/
+}
+#area-menu{
+    background: url(topo-imagem-lateral.png) no-repeat;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 0;/*quer dizer que a area da logo ira ficar colada no topo*/
+    right: 0;/*ira ficar colada no canto direito*/
+    z-index: 2;
+}
+#conteudo-menu{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+#menu-locais{
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+#menu-locais .locais{
+    float: left;
+    line-height: 2.1em;/*usado para centralizar */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a.reserva{
+    text-transform: uppercase;/*da espaçamento entre as letras*/
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+}
+#menu-locais a:hover{
+    padding: 10px;
+    background: #b6aa4fad;
+    color: #000;
+}
+#menu-vertical{
+    margin-top: 10px;
+}
+ul#navegacao{
+    float: left;
+}
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e676e;
+    line-height: 30px;/*utilizada para dar uma altura da linha e dar efeito de espaçamento*/
+}
+ul#navegacao a:hover{
+    background: #fdf6be;
+    padding-left: 10px;
+}
+.depoimento{
+    float: right;
+    width: 226px;
+    height: 164px;
+}
+/*começo do conteudo*/
+#conteudo-esquerdo{
+    float: left;
+    width: 50%;
+    background: url(bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+.conteudo h2{
+    padding: 5px 0px;
+    color: #888050;
+    font-size: 1.3em;
+}
+.conteudo p{
+    padding-top: 10px;
+    font-size: 1em;
+}
+#conteudo-direito{
+    float:right ;
+    width: 50%;
+    background: url(bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+
+}
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+}
+/*rodape*/
+#rodape{
+    clear: both;
+    background: #fff url(bg-rodape.png) top repeat-x;
+    padding: 16px;
+    color: #7d7640;
+}
+/*formatando area lateal*/
+#beneficios li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+#beneficios li a img{
+    float: left;
+    margin-right: 8px;
+}
+#beneficios li a p {
+    font-size: 0.8em;
+    color: #000;
+}
+#beneficios li a h3{
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px 0px;
+    background: url(ornamento.png)right center no-repeat;
+}
+#beneficios li:hover{
+    background: #f3f6d3;
+    cursor: pointer;
+    padding: 10px;
+}
